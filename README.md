@@ -35,20 +35,22 @@ from sonicsuite.transcription import Transcriber
 transcriber = Transcriber(model="openai/whisper-base")
 text = transcriber.transcribe("data/sample1.wav")
 print("Transcription:", text)
-
+```
 Example 2: Denoise and Transcribe
+```python
 from sonicsuite.core import AudioPipeline
 
 pipeline = AudioPipeline(noise_reduction=True, transcription=True)
 result = pipeline.process(input_path="data/sample1.wav")
 print("Transcription:", result.transcription)
-
+```
 Example 3: Apply Audio Effects
+```python
 from sonicsuite.audio_effects import AudioEffects
 
 effects = AudioEffects()
 output = effects.apply_reverb(input_path="data/sample1.wav", output_path="output/reverbed.wav")
-
+```
 # Contributing
 We welcome contributions! To contribute:
 
