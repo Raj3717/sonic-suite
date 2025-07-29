@@ -1,4 +1,4 @@
-# sonic-suite
+# sonic-suite [WIP]
 sonic-suite is a comprehensive Python package for audio processing, offering a modular suite of tools for tasks such as text transcription, background noise reduction, multi-speaker detection, text-to-speech synthesis, emotion detection, language identification, audio effects, speaker identification, and music analysis. Built with scalability and ease of use in mind, sonic-suite is ideal for developers, researchers, and audio enthusiasts.
 
 # Features
@@ -16,8 +16,8 @@ sonic-suite is a comprehensive Python package for audio processing, offering a m
 # Installation
 Clone the Repository:
 ```bash
-   git clone https://github.com/<your-username>/SonicSuite.git
-   cd SonicSuite
+   git clone https://github.com/Raj3717/sonic-suite.git
+   cd sonic-suite
    ```
 
 Create a Virtual Environment (recommended):
@@ -60,8 +60,8 @@ output = effects.apply_reverb(input_path="data/sample1.wav", output_path="output
 
 # Project Structure
 ```
-SonicSuite/
-├── sonicsuite/                  # Main package with modules
+sonic-suite/
+├── sonic-suite/                  # Main package with modules
 │   ├── transcription/           # Speech-to-text
 │   ├── noise_reduction/         # Background noise removal
 │   ├── speaker_detection/       # Multi-speaker diarization
