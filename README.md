@@ -15,15 +15,21 @@ sonic-suite is a comprehensive Python package for audio processing, offering a m
 
 # Installation
 Clone the Repository:
-git clone https://github.com/<your-username>/SonicSuite.git
-cd SonicSuite
+```bash
+   git clone https://github.com/<your-username>/SonicSuite.git
+   cd SonicSuite
+   ```
 
 Create a Virtual Environment (recommended):
-python -m venv venv
-source venv/bin/activate
+```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
 Install Dependencies:
-pip install -r requirements.txt
+ ```bash
+   pip install -r requirements.txt
+   ```
 
 # Usage
 sonic-suite provides a modular API and a pipeline for combining multiple audio processing tasks. Below are some examples:
@@ -51,6 +57,33 @@ from sonicsuite.audio_effects import AudioEffects
 effects = AudioEffects()
 output = effects.apply_reverb(input_path="data/sample1.wav", output_path="output/reverbed.wav")
 ```
+
+# Project Structure
+```
+SonicSuite/
+├── sonicsuite/                  # Main package with modules
+│   ├── transcription/           # Speech-to-text
+│   ├── noise_reduction/         # Background noise removal
+│   ├── speaker_detection/       # Multi-speaker diarization
+│   ├── text_to_audio/           # Text-to-speech synthesis
+│   ├── emotion_detection/       # Emotion analysis
+│   ├── language_identification/ # Language detection
+│   ├── audio_effects/           # Creative audio effects
+│   ├── speaker_identification/  # Speaker recognition
+│   ├── music_analysis/          # Beat and instrument analysis
+│   ├── utils/                   # Shared utilities
+│   └── core/                    # Pipeline for combining modules
+├── tests/                       # Unit and integration tests
+├── examples/                    # Example scripts
+├── docs/                        # Documentation
+├── data/                        # Sample audio files
+├── requirements.txt             # Dependencies
+├── setup.py                     # Installation script
+├── README.md                    # This file
+├── LICENSE                      # MIT License
+└── .gitignore                   # Git ignore file
+```
+
 # Contributing
 We welcome contributions! To contribute:
 
