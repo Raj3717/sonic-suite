@@ -29,6 +29,7 @@ pip install -r requirements.txt
 sonic-suite provides a modular API and a pipeline for combining multiple audio processing tasks. Below are some examples:
 
 Example 1: Transcribe Audio
+```python
 from sonicsuite.transcription import Transcriber
 
 transcriber = Transcriber(model="openai/whisper-base")
